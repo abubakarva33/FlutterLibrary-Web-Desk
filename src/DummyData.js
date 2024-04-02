@@ -56,3 +56,35 @@ export const articleData = [
     category: "Animation",
   },
 ];
+export const screenData = [
+  {
+    image: "screen1",
+  },
+  {
+    image: "screen2",
+  },
+  {
+    image: "screen3",
+  },
+  {
+    image: "screen4",
+  },
+  {
+    image: "screen5",
+  },
+  {
+    image: "screen6",
+  },
+  {
+    image: "screen7",
+  },
+  {
+    image: "screen8",
+  },
+  {
+    image: "screen9",
+  },
+  {
+    image: "screen10",
+  },
+];
