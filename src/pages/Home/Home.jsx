@@ -40,7 +40,7 @@
 //           </div>
 //         </div>
 
-import { templateData } from "../../DummyData";
+import { articleData, templateData } from "../../DummyData";
 import SectionHeader from "../components/SectionHeader";
 import TemplateEach from "../components/TemplateEach";
 
@@ -72,9 +72,15 @@ import TemplateEach from "../components/TemplateEach";
 const Home = () => {
   return (
     <div>
-      <SectionHeader title="Template" />
+      <SectionHeader title="Templates" />
       <div className=" grid grid-cols-1	md:grid-cols-2 lg:grid-cols-3 gap-4">
         {templateData?.map((item, ind) => (
+          <TemplateEach data={item} key={ind} />
+        ))}
+      </div>
+      <SectionHeader title="Articles" />
+      <div className=" grid grid-cols-1	md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {articleData?.map((item, ind) => (
           <TemplateEach data={item} key={ind} />
         ))}
       </div>

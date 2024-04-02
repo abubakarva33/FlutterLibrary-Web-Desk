@@ -35,26 +35,24 @@ export const templateData = [
     count: 28,
     download: 546,
   },
-
 ];
-
-export const myMatchItems = [
+export const articleData = [
   {
-    image: "image",
-    name: "Juli M",
-    description: "25 yrs, 4 10, Bengali, Malda",
-    employmentHistory: "Not working",
+    image: "article1",
+    title: "Learn Flutter animation",
+    date: "Mar 24, 2024",
+    category: "Animation",
   },
   {
-    image: "nullImage",
-    name: "Monica C",
-    description: "23 yrs, 4 11, English, Other",
-    employmentHistory: "Social Worker / Volunteer / N...",
+    image: "article2",
+    title: "Onboarding Screen with Carousel & Animated Dots",
+    date: "Mar 24, 2024",
+    category: "Animation",
   },
   {
-    image: "nullImage",
-    name: "23 yrs, 4' 5, Bengali, Anantap...",
-    description: "25 yrs, 4 10, Bengali, Malda",
-    employmentHistory: "Human Resources Professio..",
+    image: "article3",
+    title: "Parallax Scroll Effect with PageView in Flutter",
+    date: "Mar 24, 2024",
+    category: "Animation",
   },
 ];
