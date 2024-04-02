@@ -1,11 +1,21 @@
-import { articleData, screenData, templateData } from "../../DummyData";
-import ArticleEach from "../components/ArticleEach";
-import SectionHeader from "../components/SectionHeader";
-import TemplateEach from "../components/TemplateEach";
+import { articleData, screenData, templateData } from "../DummyData";
+import ArticleEach from "./components/ArticleEach";
+import ScreenHeader from "./components/ScreenHeader";
+import SectionHeader from "./components/SectionHeader";
+import TemplateEach from "./components/TemplateEach";
 
 const Home = () => {
   return (
-    <div>
+    <div className="mx-5">
+      <div className="w-screen flex justify-center mb-10">
+        <div className="max-w-2xl">
+          <h1 className="text-center text-4xl	">Build your next App even faster!</h1>
+          <p className="text-center text-slate-500	mt-2">
+            Beautifully designed, expertly crafted Flutter components and templates, to jumpstart
+            your projects and speed up your development process.
+          </p>
+        </div>
+      </div>
       <SectionHeader title="Templates" />
       <div className=" grid grid-cols-1	md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {templateData?.map((item, ind) => (
@@ -19,6 +29,7 @@ const Home = () => {
         ))}
       </div>
       <SectionHeader title="Screens" />
+      <ScreenHeader />
       <div className=" grid grid-cols-2	md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
         {screenData?.map((item, ind) => (
           <img src={`/images/${item?.image}.webp`} alt="" key={ind} className="rounded-lg" />
