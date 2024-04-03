@@ -8,7 +8,7 @@ import TemplateEach from "./components/TemplateEach";
 const Home = () => {
   return (
     <div className="mx-5">
-      <div className="w-screen flex justify-center mb-10">
+      <div className="flex justify-center mb-10">
         <div className="max-w-2xl">
           <h1 className="text-center text-4xl	">Build your next App even faster!</h1>
           <p className="text-center text-slate-500	mt-2">
