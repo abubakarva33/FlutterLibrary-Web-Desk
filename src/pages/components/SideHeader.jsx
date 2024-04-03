@@ -58,9 +58,10 @@ const SideHeader = () => {
       <div className="mb-4">
         {navItems?.map((item, ind) => (
           <div
-            className={`flex items-center px-4 py-2 mb-1 text-slate-500 ${
+            className={`flex items-center px-4 py-2 mb-1 text-slate-500 hover:bg-slate-100 hover:text-zinc-950	${
               item?.title === "Discover" && "bg-slate-100 text-zinc-950"
             }`}
+            key={ind}
           >
             <img src={`/images/${item?.icon}`} alt="" />
             <p className="ms-2 text-sm"> {item?.title}</p>
@@ -69,11 +70,12 @@ const SideHeader = () => {
         <p></p>
       </div>
       <div>
-        <p className="text-sm">All Screens </p>
+        <p className="text-sm">All Screens</p>
         <div className="mb-4">
           {allScreenItems?.map((item, ind) => (
             <div
-              className={`flex items-center justify-between px-4 py-2 mb-1 text-slate-500 text-sm`}
+              className={`flex items-center justify-between px-4 py-2 mb-1 text-slate-500 text-sm hover:bg-slate-100 hover:text-zinc-950	`}
+              key={ind}
             >
               <p className="ms-2 "> {item?.title}</p>
               <p className="">{item?.count}</p>

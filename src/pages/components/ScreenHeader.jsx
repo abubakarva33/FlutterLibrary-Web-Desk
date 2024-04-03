@@ -15,7 +15,7 @@ const screens = [
 const ScreenHeader = () => {
   return (
     <div className="flex items-center mb-4 flex-wrap	">
-      <div className="flex items-center px-4 py-2 border rounded-3xl me-2 bg-slate-50	">
+      <div className="flex items-center px-4 py-2 border rounded-3xl me-2 bg-slate-50">
         <img src="/images/filterIcon.webp" alt="" className="w-4 h-4 me-2" />
         <span>Filters</span>
       </div>
