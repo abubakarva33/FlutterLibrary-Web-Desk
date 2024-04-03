@@ -1,5 +1,6 @@
 import { articleData, screenData, templateData } from "../DummyData";
 import ArticleEach from "./components/ArticleEach";
+import Footer from "./components/Footer";
 import ScreenHeader from "./components/ScreenHeader";
 import SectionHeader from "./components/SectionHeader";
 import TemplateEach from "./components/TemplateEach";
@@ -35,6 +36,7 @@ const Home = () => {
           <img src={`/images/${item?.image}.webp`} alt="" key={ind} className="rounded-lg" />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
