@@ -62,13 +62,12 @@ const SideHeader = () => {
               item?.title === "Discover" && "bg-slate-100 text-zinc-950"
             }`}
           >
-            <img src={`/public/images/${item?.icon}`} alt="" />
+            <img src={`/images/${item?.icon}`} alt="" />
             <p className="ms-2 text-sm"> {item?.title}</p>
           </div>
         ))}
         <p></p>
       </div>
-
       <div>
         <p className="text-sm">All Screens </p>
         <div className="mb-4">
