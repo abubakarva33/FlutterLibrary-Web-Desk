@@ -8,7 +8,6 @@ import TemplateEach from "./components/TemplateEach";
 const Home = () => {
   return (
     <>
-
       <div className="flex justify-center my-10">
         <div className="max-w-2xl">
           <h1 className="text-center text-4xl	">Build your next App even faster!</h1>
