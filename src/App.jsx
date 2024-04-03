@@ -16,7 +16,7 @@ function App() {
         >
           <SideHeader setIsOpen={setIsOpen} />
         </div>
-        <div className=" max-w-full w-full">
+        <div className=" grid grid-cols-1  max-w-full w-full">
           <Header setIsOpen={setIsOpen} />
           <Home />
         </div>
