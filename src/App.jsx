@@ -8,7 +8,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="flex">
+      <div className="flex mx-5">
         <div
           className={`lg:w-72 lg:relative overflow-y-scroll lg:overflow-hidden h-screen lg:h-auto bg-white w-full fixed top-0 nav ${
             isOpen ? "active" : ""
@@ -16,7 +16,7 @@ function App() {
         >
           <SideHeader setIsOpen={setIsOpen} />
         </div>
-        <div className="mx-5 max-w-full w-full">
+        <div className=" max-w-full w-full">
           <Header setIsOpen={setIsOpen} />
           <Home />
         </div>

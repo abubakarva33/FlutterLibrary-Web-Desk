@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <div className="flex mb-5">
+      <div className=" block lg:flex mb-5">
         <div>
           <img src="/images/logo.webp" alt="" className="max-w-32 mb-4" />
           <p className="max-w-2xl mb-4 text-slate-500	">
@@ -15,7 +15,7 @@ const Footer = () => {
             <img src="/images/facebook.webp" alt="" className="hover:brightness-50" />
           </div>
         </div>
-        <div className="flex ms-auto mt-2">
+        <div className="flex justify-between ms-auto mt-2">
           <div className="me-10 text-sm	">
             <h6 className="font-semibold mb-2 hover:underline underline-offset-4">Explore</h6>
             <p className="mb-2 hover:underline underline-offset-4">Blogs</p>
@@ -30,12 +30,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex align-middle justify-between border-t-2 pt-4 text-slate-500 pb-5">
-        <p>Copyright 2024 TheFlutterLibrary. All rights reserved.</p>
-        <div className="flex text-sm">
-          <p className="border-e-2 px-2 hover:underline underline-offset-4"> Privacy Policy </p>
-          <p className="border-e-2 px-2 hover:underline underline-offset-4"> Terms & Conditions </p>
-          <p className="ps-2 hover:underline underline-offset-4"> Cookie Policy</p>
+      <div className=" block md:flex align-middle justify-between border-t-2 pt-4 text-slate-500 pb-5">
+        <p className="text-center">Copyright 2024 TheFlutterLibrary. All rights reserved.</p>
+        <div className=" block sm:flex items-center text-sm ">
+          <p className="border-e-2 px-2 hover:underline underline-offset-4 text-center">
+            Privacy Policy
+          </p>
+          <p className="border-e-2 px-2 hover:underline underline-offset-4 text-center">
+            Terms & Conditions
+          </p>
+          <p className="ps-2 hover:underline underline-offset-4 text-center"> Cookie Policy</p>
         </div>
       </div>
     </div>
