@@ -1,0 +1,9 @@
+@media (max-width: 1023px) {
+    .nav {
+      left: -200vw;
+    }
+    .nav.active {
+      left: 0;
+    }
+  }
+  

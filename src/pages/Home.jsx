@@ -1,7 +1,6 @@
 import { articleData, screenData, templateData } from "../DummyData";
 import ArticleEach from "./components/ArticleEach";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import ScreenHeader from "./components/ScreenHeader";
 import SectionHeader from "./components/SectionHeader";
 import TemplateEach from "./components/TemplateEach";
@@ -9,7 +8,7 @@ import TemplateEach from "./components/TemplateEach";
 const Home = () => {
   return (
     <>
-      <Header />
+
       <div className="flex justify-center my-10">
         <div className="max-w-2xl">
           <h1 className="text-center text-4xl	">Build your next App even faster!</h1>

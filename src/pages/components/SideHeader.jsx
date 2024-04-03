@@ -1,3 +1,5 @@
+import { IoCloseSharp } from "react-icons/io5";
+
 const navItems = [
   {
     title: "Discover",
@@ -51,10 +53,16 @@ const allScreenItems = [
   },
 ];
 
-const SideHeader = () => {
+const SideHeader = ({ setIsOpen }) => {
   return (
-    <div className="mx-4">
+    <div className="mx-4 relative">
       <img src="/images/logo.webp" alt="" className="my-5 w-40	" />
+      <div
+        className="absolute top-4 right-4 cursor-pointer	p-4 block lg:hidden"
+        onClick={() => setIsOpen((prev) => !prev)}
+      >
+        <IoCloseSharp />
+      </div>
       <div className="mb-4">
         {navItems?.map((item, ind) => (
           <div
