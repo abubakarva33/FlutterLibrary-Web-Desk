@@ -1,4 +1,3 @@
-import { IoPhonePortraitOutline } from "react-icons/io5";
 const TemplateEach = ({ data }) => {
   const { image, title, count, download } = data;
   return (
