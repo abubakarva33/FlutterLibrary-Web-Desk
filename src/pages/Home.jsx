@@ -4,13 +4,14 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ScreenHeader from "./components/ScreenHeader";
 import SectionHeader from "./components/SectionHeader";
+import SideHeader from "./components/SideHeader";
 import TemplateEach from "./components/TemplateEach";
 
 const Home = () => {
   return (
     <div className="grid  grid-cols-12">
       <div className=" col-span-2">
-        <h1>ggf</h1>
+        <SideHeader />
       </div>
       <div className="mx-5 col-span-10">
         <Header />
